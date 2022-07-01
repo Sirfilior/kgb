@@ -405,7 +405,7 @@ export default function NewNotePage() {
                               <span
                                 className={classNames(
                                   "block truncate",
-                                  selected && "font-semibold"
+                                  Boolean(selected) ? "font-semibold" : ""
                                 )}
                               >
                                 {person.name}
