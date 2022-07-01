@@ -1,0 +1,33 @@
+/* @keyframes move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.homeImg {
+  animation-name: move;
+  animation-duration: 120s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.imgCont {
+  width: 80%;
+  animation-name: scale;
+  animation-duration: 30s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+} */
