@@ -1,4 +1,4 @@
-app = "kgb-staging"
+app = "kgb"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = [ ]
