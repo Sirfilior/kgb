@@ -109,7 +109,7 @@ export default function LoginPage() {
       <Links />
       <header className="">
         <div className="absolute inset-0 flex justify-center">
-          <div className="absolute h-[500px] w-[500px] -translate-y-[170px] transform overflow-hidden rounded-full">
+          <div className="absolute h-[500px] w-[500px] -translate-y-[210px] transform overflow-hidden rounded-full border-4 border-bg ring-4 ring-pastel">
             <img
               className="homeImg absolute h-full max-w-none"
               alt="c"
@@ -117,18 +117,18 @@ export default function LoginPage() {
             />
           </div>
         </div>
-        <div className="relative mx-auto w-full max-w-md px-8">
+        <div className="relative mx-auto w-full max-w-md px-8 pt-64">
           <h1 className="text-4xl tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-            <span className="block font-medium xl:inline">
+            <span className="block font-serif xl:inline">
               Herzlich Willkommen
             </span>
-            <span className="block font-extrabold xl:inline">
+            <span className="block font-serif font-bold xl:inline">
               Melden Sie sich an
             </span>
           </h1>
         </div>
       </header>
-      <div className="relative  mx-auto mt-36 w-full max-w-md px-8">
+      <div className="relative  mx-auto mt-12 w-full max-w-md px-8">
         <Form method="post" className="space-y-6">
           <div>
             <label
@@ -192,20 +192,6 @@ export default function LoginPage() {
             Log in
           </button>
           <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <input
-                id="remember"
-                name="remember"
-                type="checkbox"
-                className="h-4 w-4 rounded border-gray-300 text-pastel focus:ring-pastel"
-              />
-              <label
-                htmlFor="remember"
-                className="ml-2 block text-sm text-gray-900"
-              >
-                Speichern
-              </label>
-            </div>
             <div className="text-center text-sm text-gray-500">
               Noch kein Account?{" "}
               <Link
