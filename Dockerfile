@@ -26,9 +26,6 @@ RUN npm prune --production
 
 # Build the app
 FROM base as build
-ENV DATABASE_URL=file:/data/sqlite.db
-ENV PORT="8080"
-ENV NODE_ENV="production"
 
 WORKDIR /myapp
 
@@ -38,7 +35,6 @@ ADD prisma .
 RUN npx prisma generate
 
 ADD . .
-RUN npm run seed
 RUN npm run build
 
 # Finally, build the production image with minimal footprint
@@ -59,5 +55,6 @@ COPY --from=build /myapp/node_modules/.prisma /myapp/node_modules/.prisma
 COPY --from=build /myapp/build /myapp/build
 COPY --from=build /myapp/public /myapp/public
 ADD . .
+RUN npm run seed
 
 CMD ["npm", "start"]
